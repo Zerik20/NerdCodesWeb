@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
-@theme{
-    
+@theme {
+  /* 🌞 Modo Claro */
+  --color-primary-800: #5d0387; /* Más fuerte */
+    --color-primary-700: #7A0EB3;
+    --color-primary-600: #9A1FFF;
+    --color-primary-500: #B445FF;
+    --color-primary-400: #C47CFF;
+    --color-primary-300: #D7B3FF; /* Más claro */
+
+  /* 🌙 Modo Oscuro */
+
 }
+
+
