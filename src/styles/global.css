@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../assets/fonts/AkiraExpanded-SuperBold.woff') format('woff'),
+        url('../assets/fonts/AkiraExpanded-SuperBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 @theme {
   /* 🌞 Modo Claro */
@@ -10,7 +18,11 @@
     --color-primary-300: #D7B3FF; /* Más claro */
 
   /* 🌙 Modo Oscuro */
+    
 
+
+  /* 🌙 fuentes */
+  --font-semibold: 'Akira Expanded', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 
