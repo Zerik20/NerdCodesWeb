@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
 @font-face {
     font-family: 'Akira Expanded';
     src: url('../assets/fonts/AkiraExpanded-SuperBold.woff') format('woff'),
@@ -8,21 +16,25 @@
     font-display: swap;
 }
 
+
 @theme {
-  /* 🌞 Modo Claro */
-  --color-primary-800: #5d0387; /* Más fuerte */
-    --color-primary-700: #7A0EB3;
-    --color-primary-600: #9A1FFF;
-    --color-primary-500: #B445FF;
-    --color-primary-400: #C47CFF;
+    --color-primary-50: #eff6ff;
+    --color-primary-100: #dbeafe;
+    --color-primary-200: #bfdbfe;
     --color-primary-300: #D7B3FF; /* Más claro */
+    --color-primary-400: #C47CFF;
+    --color-primary-500: #B445FF;
+    --color-primary-600: #9A1FFF;
+    --color-primary-700: #7A0EB3;
+    --color-primary-800: #5d0387;
+    --color-primary-900: #1e3a8a;
 
-  /* 🌙 Modo Oscuro */
+    --font-primary: 'Akira Expanded', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     
-
-
-  /* 🌙 fuentes */
-  --font-semibold: 'Akira Expanded', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-body: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
 }
+
 
 
